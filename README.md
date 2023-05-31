@@ -10,3 +10,12 @@ DEV:
 `
 yarn dev
 `
+Features: <br>
+* Save DataGrid state between refreshes. (localstorage)
+* Dark and light theme + save theme preference. (localstorage)
+
+Credits to:  <br>
+* ReactJs
+* Vite
+* MUI
+* Tenstack/react-query
