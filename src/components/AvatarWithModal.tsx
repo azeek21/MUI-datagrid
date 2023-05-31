@@ -1,5 +1,5 @@
 import { Close as CloseIcon } from "@mui/icons-material";
-import { Avatar, Box, IconButton, Modal, Paper } from "@mui/material";
+import { Avatar, IconButton, Modal, Paper } from "@mui/material";
 import { useState } from "react";
 
 const AvatarWithModal = ({ src }: { src: string }) => {

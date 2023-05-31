@@ -1,15 +1,16 @@
-import { DataGrid, GridRowsProp, GridColDef } from "@mui/x-data-grid";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import fetchContacts from "../mock/mockFetch";
 import { useQuery } from "@tanstack/react-query";
 import { useMemo, useState } from "react";
 import AvatarWithModal from "./AvatarWithModal";
-import { DatePicker, DateTimePicker } from "@mui/x-date-pickers";
+import { DatePicker } from "@mui/x-date-pickers";
 import dayjs from "dayjs";
 import { Typography } from "@mui/material";
 import { Cloud, Save, SimCard } from "@mui/icons-material";
+
 export default function Contacts() {
-  const { data, isLoading, isError } = useQuery(["contacts"], fetchContacts);
-  const [dataState, setDataState] = useState(() => {
+  const { data, isLoading } = useQuery(["contacts"], fetchContacts);
+  const [dataState, _setDataState] = useState(() => {
     const state = localStorage.getItem("dataGridState");
     if (state) {
       return JSON.parse(state);
@@ -101,7 +102,7 @@ export default function Contacts() {
       onStateChange={(state) => {
         localStorage.setItem("dataGridState", JSON.stringify(state));
       }}
-      getRowHeight={(param) => {
+      getRowHeight={() => {
         // here we can calculate row height depending on para.row
         return 100;
       }}
