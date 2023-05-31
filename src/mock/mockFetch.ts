@@ -1,0 +1,145 @@
+import { Tcontact } from "../types/types";
+const contacts = [
+  {
+    id: 1,
+    firstName: "Abdulaziz",
+    lastName: "Askaraliev",
+    email: "pymanuz@gmail.com",
+    photo: "https://avatars.githubusercontent.com/u/91887882?v=4",
+    number: "+79032120900",
+    location: "SIM",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 2,
+    firstName: "Azeek",
+    lastName: "",
+    email: "",
+    photo:
+      "https://pbs.twimg.com/profile_images/1398198122854166532/dRMq0r_0_400x400.jpg",
+    number: "+123456789",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 3,
+    firstName: "Jo",
+    lastName: "Mama",
+    email: "",
+    photo: "",
+    number: "+998912345678",
+    location: "local",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 4,
+    firstName: "Bexzod",
+    lastName: "",
+    email: "",
+    photo: "",
+    number: "+79031234567",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 5,
+    firstName: "Dead",
+    lastName: "Aydin",
+    email: "",
+    photo: "https://cdn.anisearch.com/images/character/cover/68/68716_300.webp",
+    number: "+20200923",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 6,
+    firstName: "LAM431",
+    lastName: "Q2FycnkgT24",
+    email: "",
+    photo:
+      "https://upload.wikimedia.org/wikipedia/commons/e/ee/Xxxtentacion_%28cropped%29.jpg",
+    number: "+061818",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 7,
+    firstName: "You",
+    lastName: "Tester",
+    email: "example@example.com",
+    photo: "",
+    number: "+123456789",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 8,
+    firstName: "Шахзод",
+    lastName: "",
+    email: "shax@example.ru",
+    photo: "",
+    number: "+12349",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 9,
+    firstName: "Денис",
+    lastName: "",
+    email: "",
+    photo: "",
+    number: "+12334567",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 10,
+    firstName: "Михаил",
+    lastName: "Вяльцев",
+    email: "mixa@mix.ru",
+    photo: "",
+    number: "+12334567",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 11,
+    firstName: "Akam",
+    lastName: "",
+    email: "akam@rassiyada.ru",
+    photo: "",
+    number: "+7123456789",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 12,
+    firstName: "Jaloldin",
+    lastName: "",
+    email: "jaloldin@kazanda.ru",
+    photo: "",
+    number: "+7242342342342",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+  {
+    id: 13,
+    firstName: "Sultonali",
+    lastName: "Nabijonov",
+    email: "facepalm@master.ru",
+    photo: "",
+    number: "+12334567",
+    location: "cloud",
+    createdAt: "04/17/2022",
+  },
+];
+
+async function fetchContacts(): Promise<Tcontact[]> {
+  return new Promise((res) => {
+    setTimeout(() => {
+      res(contacts);
+    }, 2000);
+  });
+}
+
+export default fetchContacts;
